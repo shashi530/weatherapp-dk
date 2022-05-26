@@ -39,7 +39,7 @@ export default function Wether() {
       temp_f: all["temp_f"],
     };
     // console.log("current2",current);
-    const url = "http://localhost:1234/weather";
+    const url = "https://weather-api-backend-app.herokuapp.com/weather";
     axios
       .post(url, current)
       .then((res) => {
@@ -103,7 +103,7 @@ export default function Wether() {
               </Flex>
               <Flex direction='column' fontSize="25px">
                 <Heading size='lg'>FORECAST API</Heading>
-                <Text><b>Sunrise:</b> {info.sunrise}</Text>
+                <Text mt='30'><b>Sunrise:</b> {info.sunrise}</Text>
                 <Text><b>Suset:</b> {info.sunset}</Text>
                 <Text><b>Moonrise:</b>{info.moonrise}</Text>
                 <Text><b>Moonset:</b>{info.moonset}</Text>
