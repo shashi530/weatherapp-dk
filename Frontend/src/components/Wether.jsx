@@ -51,7 +51,7 @@ export default function Wether() {
   const handleClick = () => {
     const key = `e7d266b3de274da48d560528222605`;
     let api1 = `https://api.weatherapi.com/v1/astronomy.json?key=${key}&q=${inp.trim()}&dt=${mainDate}`;
-    let api2 = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${inp.trim()}&days=1&aqi=yes&alerts=yes`;
+    let api2 = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${inp.trim()}&days=1&aqi=yes&alerts=yes`;
     axios
       .get(api1)
       .then((res) => {
