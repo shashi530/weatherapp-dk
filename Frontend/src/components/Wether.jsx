@@ -18,7 +18,7 @@ export default function Wether() {
   if (d[1] == "/") {
     d = 0 + d[0];
   }
-  let mainDate = year.join("") + "-" + month + "-" + d.join("");
+  let mainDate = year.join("") + "-" + month + "-" + d.join("");  
   
   const handelChange = (e) => {
     setInp(e.target.value);
@@ -124,7 +124,6 @@ export default function Wether() {
               marginwidth="0"
             ></iframe>
           </Box>
-
           </Flex>
 
 </Box>
