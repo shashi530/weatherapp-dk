@@ -40,8 +40,8 @@ export default function Wether() {
       temp_f: all["temp_f"],
     };
     // console.log("current2",current);
-    // const url = "https://weather-api-backend-app.herokuapp.com/weather";
-    const url = "http://localhost:1234/weather";
+    const url = "https://weather-api-backend-app.herokuapp.com/weather";
+    // const url = "http://localhost:1234/weather";
     axios
       .post(url, current)
       .then((res) => {
